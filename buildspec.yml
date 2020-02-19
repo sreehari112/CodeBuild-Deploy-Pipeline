@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - apt update
+      - apt install openjdk-8-jre-headless -y
+      - apt install maven -y
+  build:
+    commands:
+      - mvn clean package
+      - ls -al
+artifacts:
+  files:
+    - '**/*'

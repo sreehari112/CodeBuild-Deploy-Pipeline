@@ -1,0 +1,11 @@
+- hosts: localhost
+  vars:
+     pwd: 
+     username: "Hari"
+  tasks:
+        - name: install required softwar
+          debug:
+            msg: "Username is:- {{ username }} & Password is:- {{ pwd }}"
+
+
+
